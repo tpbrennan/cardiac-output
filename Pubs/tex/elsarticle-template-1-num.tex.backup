@@ -1,0 +1,300 @@
+%% This is file `elsarticle-template-1-num.tex',
+%%
+%% Copyright 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%%
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%%
+%% $Id: elsarticle-template-1-num.tex 149 2009-10-08 05:01:15Z rishi $
+%% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-1-num.tex $
+%%
+\documentclass[preprint,12pt]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% if you use PostScript figures in your article
+%% use the graphics package for simple commands
+%% \usepackage{graphics}
+%% or use the graphicx package for more complicated commands
+%% \usepackage{graphicx}
+%% or use the epsfig package if you prefer to use the old commands
+%% \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{longtable}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+\usepackage{lineno}
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+%% \biboptions{comma,round}
+
+% \biboptions{}
+
+
+\journal{Journal Name}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for the associated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for the associated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for the associated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%%
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+\title{Effect of chloride on ICU outcomes}
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{<author name>}
+%% \address[label1]{<address>}
+%% \address[label2]{<address>}
+
+\author{}
+
+\address{Cambridge MA, United States}
+
+\begin{abstract}
+%% Text of abstract
+\textbf{Background.} Intravenous administration of chloride-rich fluids is probably the most common and modifiable cause of hyperchloraemia in the ICU. The chloride content of these fluids, from 0.9\% NaCl (saline), is supraphysiologic.
+\textbf{Objective.} To study the effect of the amount of chloride administered during the first 24 hours on ICU outcomes; to study the effect of the change in serum chloride during the first 24 hours on ICU outcomes.
+\end{abstract}
+
+\begin{keyword}
+Intensive Care Unit \sep Chloride administration
+%% keywords here, in the form: keyword \sep keyword
+
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+
+\end{keyword}
+
+\end{frontmatter}
+
+%%
+%% Start line numbering here if you want
+%%
+\linenumbers
+
+%% main text
+\section{Background}
+\label{S:1}
+
+The amount of attention chloride receives in critically ill patients is limited and much less than other routinely measured electrolytes. For example, the PubMed search term 'hyperchloremia' generates 181 citations while 'hypernatremoia' and 'hypercalcemia' generate 2481 and 15518 citations, respectively\footnote{Search conducted prior to 2010.} \cite{Yunos2010}. The same search conducted in 2013 generated the following figures: 211, 2873 and 17241 citations, respectively.
+
+Yunos et al. (2012) \cite{Yunos2012} showed that renal outcomes in the ICU improved when chloride-rich IV fluids were given only to patients with select conditions.
+That change in practice was associated with a significantly smaller mean serum creatinine level increase ($14.8$ versus $22.6 \mu mol/L, P = 0.03$), a lower rate of acute kidney injury defined by RIFLE injury and failure class ($8.4\%$ versus $14\%, P<0.001$), a lower rate of renal replacement therapy (RRT) use ($6.3\%$ versus $10\%, P= 0.005$). 
+The change was not, however, associated with differences in hospital mortality, hospital or ICU length of stay, or the need for RRT after discharge.
+The primary outcomes of the study included increase from baseline to peak creatinine level in the ICU and incidence of AKI according to the risk, injury, failure, loss, end-stage (RIFLE) classification. Secondary post hoc analysis outcomes included the need for RRT, length of stay in ICU and hospital, and survival.
+
+\section{Materials and Methods}
+%Two different cohorts of patients from the MIMIC II databse \cite{SaeedCCM11} have been considered:
+
+%Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque quis interdum velit. Nulla tincidunt sem quis nisi molestie nec hendrerit nulla interdum. Nunc at lectus at neque dapibus dapibus sit amet in massa. Nam ut nisl in diam consectetur dignissim. Sed lacinia diam id nunc suscipit vitae semper lorem semper. In vehicula velit at tortor fringilla elementum aliquam erat blandit. Donec pretium libero et neque vehicula blandit. Curabitur consequat interdum sem at ultrices. Sed at tincidunt metus. Etiam vulputate, lacus eget fermentum posuere, ante mi dignissim augue, et ultrices felis tortor sed nisl.
+
+%\begin{itemize}
+% \item Population of septic patients (using Martin's definition);
+% \item Entire adult population.
+%\end{itemize}
+
+All statistical analysis was performed using Matlab version 2013a (Mathworks). Baseline comparisons were performed using $\chi^2$ tests for equal proportion with results reported as numbers, percentages, and 95\% confidence intervals. Continuously normally distributed variables were compared using \emph{t}-tests and reported as means with 95\% confidence intervals, while non-normally distributed data were compared using Wilcoxon rank sum tests and reported as medians and interquartile range (IQR).
+
+
+%\begin{figure}[h]
+%\centering\includegraphics[width=0.9\linewidth]{cohort1_flux}
+%\caption{Patient record selection. Using the MIMIC II database, we identified 3,931 patients that matched the procedure codes defining severe sepsis.}
+%\end{figure}
+
+%\begin{figure}[h]
+%\centering\includegraphics[width=0.9\linewidth]{cohort2_flux}
+%\caption{Patient record selection. Using the MIMIC II database, we identified 32,332 patients.}
+%\end{figure}
+
+\section{Results}
+
+\subsection{Preliminary analysis}
+
+The correlations between the changes in serum chloride, and changes in serum sodium and serum bicarbonate, and chloride intake in the first 24 hours are shown in the following figures. 
+The results are shown in Tables 1 to 3.
+
+\begin{figure}[h]
+\centering\includegraphics[width=1\linewidth]{fig1}
+\caption{Correlation between the 24-hour changes in serum chloride and the 24-hour changes in serum bicarbonate.}
+\end{figure}
+
+\begin{figure}[h]
+\centering\includegraphics[width=1\linewidth]{fig2}
+\caption{Correlation between the 24-hour changes in serum chloride and the 24-hour changes in serum sodium.}
+\end{figure}
+
+\begin{figure}[h]
+\centering\includegraphics[width=1\linewidth]{fig3}
+\caption{Correlation between the 24-hour changes in serum chloride and the chloride intake in the first 24 hours.}
+\end{figure}
+
+%\begin{table}[h]
+%\input{table_septic_icumort}
+%\end{table}
+
+%\begin{table}[h]
+%\input{table_septic_icumort_delta}
+%\end{table}
+
+%\begin{table}[h]
+%\input{table_septic_icumort_elix}
+%\end{table}
+
+\subsection{Primary Outcome - ICU mortality}
+Here we compare the variables' differences between ICU survivors and ICU nonsurvivors.
+
+\begin{table}[h]
+\input{table_all_icumort}
+\end{table}
+
+\begin{table}[h]
+\input{table_all_icumort_delta}
+\end{table}
+
+\begin{table}[h]
+\input{table_all_icumort_elix}
+\end{table}
+
+
+\subsection{'Landmark' Analysis}
+For the ICU survivors, the amount of fluids (per kg) given to each patient during their entire stay in ICU, was determined. We compare if the amount of fluids given is related to 28-day mortality.
+
+\begin{table}[h]
+\input{table_landscape}
+\end{table}
+
+\begin{table}[h]
+\input{table_landscape_elix}
+\end{table}
+
+%\begin{equation}
+%\label{eq:emc}
+%e = mc^2
+%\end{equation}
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
+
+%% \section{}
+%% \label{}
+
+%% References
+%%
+%% Following citation commands can be used in the body text:
+%% Usage of \cite is as follows:
+%%   \cite{key}          ==>>  [#]
+%%   \cite[chap. 2]{key} ==>>  [#, chap. 2]
+%%   \citet{key}         ==>>  Author [#]
+
+%% References with bibTeX database:
+
+\subsection{Renal Replacement Therapy as Outcome}
+Here we compare the differences between patients who have undergone RRT and patients who did not.
+
+\begin{table}[h]
+\input{table_rrt}
+\end{table}
+
+\begin{table}[h]
+\input{table_rrt_delta}
+\end{table}
+
+
+
+
+
+\section{References}
+\bibliographystyle{model1-num-names}
+\bibliography{sample}
+
+%% Authors are advised to submit their bibtex database files. They are
+%% requested to list a bibtex style file in the manuscript if they do
+%% not want to use model1-num-names.bst.
+
+%% References without bibTeX database:
+
+% \begin{thebibliography}{00}
+
+%% \bibitem must have the following form:
+%%   \bibitem{key}...
+%%
+
+% \bibitem{}
+
+% \end{thebibliography}
+
+
+\end{document}
+
+%%
+%% End of file `elsarticle-template-1-num.tex'.

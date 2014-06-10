@@ -1,0 +1,25 @@
+\begin{thebibliography}{2}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Yunos et~al.(2010)Yunos, Bellomo, Story, and Kellum}]{Yunos2010}
+\bibinfo{author}{N.~Yunos}, \bibinfo{author}{R.~Bellomo},
+  \bibinfo{author}{D.~Story}, \bibinfo{author}{J.~Kellum},
+\newblock \bibinfo{title}{Bench-to-bedside review: chloride in critical
+  illness},
+\newblock \bibinfo{journal}{Critical Care} \bibinfo{volume}{14}
+  (\bibinfo{year}{2010}) \bibinfo{pages}{226}.
+%Type = Article
+\bibitem[{Yunos et~al.(2012)Yunos, Bellomo, Hegarty, Story, Ho, and
+  Bailey}]{Yunos2012}
+\bibinfo{author}{N.~Yunos}, \bibinfo{author}{R.~Bellomo},
+  \bibinfo{author}{C.~Hegarty}, \bibinfo{author}{D.~Story},
+  \bibinfo{author}{L.~Ho}, \bibinfo{author}{M.~Bailey},
+\newblock \bibinfo{title}{Association between a chloride-liberal vs
+  chloride-restrictive intravenous fluid administration strategy and kidney
+  injury in critically ill adults},
+\newblock \bibinfo{journal}{JAMA} \bibinfo{volume}{308} (\bibinfo{year}{2012})
+  \bibinfo{pages}{1566--1572}.
+
+\end{thebibliography}
